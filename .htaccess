@@ -1,0 +1,12 @@
+
+# HTID:3841291: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:3841291:
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  #RewriteBase /
+
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^ index.php [QSA,L]
+</IfModule>
